@@ -59,9 +59,9 @@ class CvSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "BETTER DESIGN,\nBETTER EXPERIENCES",
+                "BETTER DESIGN,\nBETTER FUNCTIONALITY,\nBETTER EXPERIENCE.",
                 style: GoogleFonts.oswald(
-                  color: Colors.white,
+                  color: kTitleColor,
                   fontWeight: FontWeight.w900,
                   height: 1.8,
                   fontSize: 18.0,
@@ -126,7 +126,7 @@ class CvSection extends StatelessWidget {
                                 style: GoogleFonts.oswald(
                                   fontSize: 20.0,
                                   fontWeight: FontWeight.w700,
-                                  color: Colors.white,
+                                  color: kTitleColor,
                                 ),
                               )
                             ],

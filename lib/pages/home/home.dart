@@ -14,6 +14,8 @@ import 'package:web_portfolio/pages/home/components/website_ad.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/globals.dart';
 
+import '../../utils/constants.dart';
+
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -42,7 +44,7 @@ class Home extends StatelessWidget {
                             child: Text(
                               headerItems[index].title,
                               style: TextStyle(
-                                color: Colors.white,
+                                color: kTitleColor,
                                 fontSize: 13.0,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -54,7 +56,7 @@ class Home extends StatelessWidget {
                         title: Text(
                           headerItems[index].title,
                           style: TextStyle(
-                            color: Colors.white,
+                            color: kTitleColor,
                           ),
                         ),
                       );
@@ -70,46 +72,50 @@ class Home extends StatelessWidget {
         ),
       ),
       body: Container(
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                child: Header(),
+        child: Stack(
+          children: [
+            SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Carousel(),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  CvSection(),
+                  IosAppAd(),
+                  SizedBox(
+                    height: 70.0,
+                  ),
+                  WebsiteAd(),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 28.0),
+                    child: PortfolioStats(),
+                  ),
+                  SizedBox(
+                    height: 50.0,
+                  ),
+                  EducationSection(),
+                  SizedBox(
+                    height: 50.0,
+                  ),
+                  SkillSection(),
+                  SizedBox(
+                    height: 50.0,
+                  ),
+                  Sponsors(),
+                  SizedBox(
+                    height: 50.0,
+                  ),
+                  TestimonialWidget(),
+                  Footer(),
+                ],
               ),
-              Carousel(),
-              SizedBox(
-                height: 20.0,
-              ),
-              CvSection(),
-              IosAppAd(),
-              SizedBox(
-                height: 70.0,
-              ),
-              WebsiteAd(),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 28.0),
-                child: PortfolioStats(),
-              ),
-              SizedBox(
-                height: 50.0,
-              ),
-              EducationSection(),
-              SizedBox(
-                height: 50.0,
-              ),
-              SkillSection(),
-              SizedBox(
-                height: 50.0,
-              ),
-              Sponsors(),
-              SizedBox(
-                height: 50.0,
-              ),
-              TestimonialWidget(),
-              Footer(),
-            ],
-          ),
+            ),
+            Container(
+              child: Header(),
+            ),
+          ],
         ),
       ),
     );

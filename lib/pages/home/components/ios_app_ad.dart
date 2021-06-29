@@ -47,7 +47,7 @@ class IosAppAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "IOS APP",
+                          "APPS",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -58,9 +58,9 @@ class IosAppAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         Text(
-                          "UNIVERSAL\nSMART HOME APP",
+                          "FINANCE",
                           style: GoogleFonts.oswald(
-                            color: Colors.white,
+                            color: kTitleColor,
                             fontWeight: FontWeight.w900,
                             height: 1.3,
                             fontSize: 35.0,
@@ -82,26 +82,29 @@ class IosAppAd extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            MouseRegion(
-                              cursor: SystemMouseCursors.click,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: kPrimaryColor,
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                height: 48.0,
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 28.0,
-                                ),
-                                child: TextButton(
-                                  onPressed: () {},
-                                  child: Center(
-                                    child: Text(
-                                      "EXPLORE MORE",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 13.0,
-                                        fontWeight: FontWeight.bold,
+                            Material(
+                              type: MaterialType.transparency,
+                              child: InkWell(
+                                onTap: () {},
+                                child: MouseRegion(
+                                  cursor: SystemMouseCursors.click,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: kPrimaryColor,
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                    height: 48.0,
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 28.0,
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "MORE ABOUT THIS",
+                                        style: TextStyle(
+                                          color: kTitleColor,
+                                          fontSize: 13.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -111,19 +114,21 @@ class IosAppAd extends StatelessWidget {
                             SizedBox(
                               width: 10.0,
                             ),
-                            MouseRegion(
-                              cursor: SystemMouseCursors.click,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  border: Border.all(
-                                    color: kPrimaryColor,
+                            InkWell(
+                              onTap: () {},
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: MouseRegion(
+                                cursor: SystemMouseCursors.click,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    border: Border.all(
+                                      color: kPrimaryColor,
+                                    ),
                                   ),
-                                ),
-                                height: 48.0,
-                                padding: EdgeInsets.symmetric(horizontal: 28.0),
-                                child: TextButton(
-                                  onPressed: () {},
+                                  height: 48.0,
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 28.0),
                                   child: Center(
                                     child: Text(
                                       "NEXT APP",

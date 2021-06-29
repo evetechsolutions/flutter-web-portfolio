@@ -53,7 +53,7 @@ class WebsiteAd extends StatelessWidget {
                         Text(
                           "EVOLVING NAGA\nRESORT WEBSITE",
                           style: GoogleFonts.oswald(
-                            color: Colors.white,
+                            color: kTitleColor,
                             fontWeight: FontWeight.w900,
                             height: 1.3,
                             fontSize: 35.0,
@@ -92,7 +92,7 @@ class WebsiteAd extends StatelessWidget {
                                     child: Text(
                                       "EXPLORE MORE",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: kTitleColor,
                                         fontSize: 13.0,
                                         fontWeight: FontWeight.bold,
                                       ),

@@ -7,24 +7,24 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 List<Skill> skills = [
   Skill(
-    skill: "Dart",
-    percentage: 62,
-  ),
-  Skill(
-    skill: "Javascript",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "PHP",
-    percentage: 78,
-  ),
-  Skill(
-    skill: "Python",
+    skill: "Mobile Development",
     percentage: 90,
   ),
   Skill(
-    skill: "GoLang",
-    percentage: 40,
+    skill: "Web Development",
+    percentage: 60,
+  ),
+  Skill(
+    skill: "Java",
+    percentage: 70,
+  ),
+  Skill(
+    skill: "Javascript",
+    percentage: 60,
+  ),
+  Skill(
+    skill: "API creation",
+    percentage: 70,
   ),
 ];
 
@@ -71,7 +71,7 @@ class SkillSection extends StatelessWidget {
                       Text(
                         "SKILLS",
                         style: GoogleFonts.oswald(
-                          color: Colors.white,
+                          color: kTitleColor,
                           fontWeight: FontWeight.w900,
                           fontSize: 28.0,
                           height: 1.3,
@@ -81,7 +81,7 @@ class SkillSection extends StatelessWidget {
                         height: 10.0,
                       ),
                       Text(
-                        "This is all the skills listed below more will be added in due time. This is all the skills listed below more will be added in due time.",
+                        "This is all the skills listed below more will be added in due time.",
                         style: TextStyle(
                           color: kCaptionColor,
                           height: 1.5,
@@ -105,7 +105,7 @@ class SkillSection extends StatelessWidget {
                                         alignment: Alignment.centerLeft,
                                         height: 38.0,
                                         child: Text(skill.skill),
-                                        color: Colors.white,
+                                        color: kTitleColor,
                                       ),
                                     ),
                                     SizedBox(
@@ -115,7 +115,7 @@ class SkillSection extends StatelessWidget {
                                       // remaining (blank part)
                                       flex: 100 - skill.percentage,
                                       child: Divider(
-                                        color: Colors.white,
+                                        color: kTitleColor,
                                       ),
                                     ),
                                     SizedBox(
@@ -124,7 +124,7 @@ class SkillSection extends StatelessWidget {
                                     Text(
                                       "${skill.percentage}%",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: kTitleColor,
                                         fontSize: 16.0,
                                       ),
                                     )

@@ -49,7 +49,7 @@ Widget _buildUi(double width) {
               Text(
                 "TESTIMONIALS",
                 style: GoogleFonts.oswald(
-                  color: Colors.white,
+                  color: kTitleColor,
                   fontWeight: FontWeight.w900,
                   fontSize: 30.0,
                   height: 1.3,
@@ -66,7 +66,7 @@ Widget _buildUi(double width) {
                       TextSpan(
                         text:
                             "This is the portfolio section. There is alot of work here",
-                        style: TextStyle(color: Colors.white, height: 1.8),
+                        style: TextStyle(color: kTitleColor, height: 1.8),
                       ),
                       TextSpan(
                           text: " click here to contact us",
@@ -77,7 +77,7 @@ Widget _buildUi(double width) {
                           )),
                       TextSpan(
                         text: ". Please subscribe to me youtube channel :-)",
-                        style: TextStyle(color: Colors.white, height: 1.8),
+                        style: TextStyle(color: kTitleColor, height: 1.8),
                       ),
                     ],
                   ),
@@ -137,7 +137,7 @@ Widget _buildUi(double width) {
                                   Text(
                                     testimonial.personName,
                                     style: GoogleFonts.oswald(
-                                      color: Colors.white,
+                                      color: kTitleColor,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 16.0,
                                     ),

@@ -14,7 +14,7 @@ List<CarouselItemModel> carouselItems = List.generate(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            "PRODUCT DESIGNER",
+            "FULL-STACK DEVELOPER",
             style: GoogleFonts.oswald(
               color: kPrimaryColor,
               fontWeight: FontWeight.w900,
@@ -25,9 +25,9 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 18.0,
           ),
           Text(
-            "MICHELE\nHARRINGTON",
+            "DAVIDE\nDESSÌ",
             style: GoogleFonts.oswald(
-              color: Colors.white,
+              color: kTitleColor,
               fontSize: 40.0,
               fontWeight: FontWeight.w900,
               height: 1.3,
@@ -37,7 +37,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 10.0,
           ),
           Text(
-            "Full-stack developer, based in Barcelona",
+            "Building something for humanity",
             style: TextStyle(
               color: kCaptionColor,
               fontSize: 15.0,
@@ -51,7 +51,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             child: Wrap(
               children: [
                 Text(
-                  "Need a full custom website?",
+                  "Need a full custom Mobile App or Website?",
                   style: TextStyle(
                     color: kCaptionColor,
                     fontSize: 15.0,
@@ -63,10 +63,10 @@ List<CarouselItemModel> carouselItems = List.generate(
                   child: MouseRegion(
                     cursor: SystemMouseCursors.click,
                     child: Text(
-                      " Got a project? Let's talk.",
+                      " Got an IDEA? Let's talk!",
                       style: TextStyle(
                         height: 1.5,
-                        color: Colors.white,
+                        color: kTitleColor,
                         fontSize: 15.0,
                       ),
                     ),
@@ -94,7 +94,7 @@ List<CarouselItemModel> carouselItems = List.generate(
                 child: Text(
                   "GET STARTED",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: kTitleColor,
                     fontSize: 13.0,
                     fontWeight: FontWeight.bold,
                   ),

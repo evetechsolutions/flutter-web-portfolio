@@ -39,7 +39,7 @@ class HeaderLogo extends StatelessWidget {
                 TextSpan(
                   text: "M",
                   style: GoogleFonts.oswald(
-                    color: Colors.white,
+                    color: kTitleColor,
                     fontSize: 32.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -87,7 +87,7 @@ class HeaderRow extends StatelessWidget {
                           child: Text(
                             item.title,
                             style: TextStyle(
-                              color: Colors.white,
+                              color: kTitleColor,
                               fontSize: 13.0,
                               fontWeight: FontWeight.bold,
                             ),
@@ -104,7 +104,7 @@ class HeaderRow extends StatelessWidget {
                           child: Text(
                             item.title,
                             style: TextStyle(
-                              color: Colors.white,
+                              color: kTitleColor,
                               fontSize: 13.0,
                               fontWeight: FontWeight.bold,
                             ),
@@ -153,7 +153,7 @@ class Header extends StatelessWidget {
               },
               child: Icon(
                 FlutterIcons.menu_fea,
-                color: Colors.white,
+                color: kTitleColor,
                 size: 28.0,
               ),
             )

@@ -10,26 +10,26 @@ final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/mappin.png",
     title: "ADDRESS",
-    text1: "999 Carter Street",
-    text2: "Sailor Springs, IL 64234",
+    text1: "Via della Resistenza 1B",
+    text2: "Sestu (CA), Italy",
   ),
   FooterItem(
     iconPath: "assets/phone.png",
     title: "PHONE",
-    text1: "+1 618-689-9604",
-    text2: "+1 781-689-9632",
+    text1: "+39 342-06-69-619",
+    text2: "",
   ),
   FooterItem(
     iconPath: "assets/email.png",
     title: "EMAIL",
-    text1: "hello@example.com",
-    text2: "info@flutterpanda.com",
+    text1: "davide.dessi@evetechsolutions.com",
+    text2: "davide.dessi319@gmail.com",
   ),
   FooterItem(
     iconPath: "assets/whatsapp.png",
     title: "WHATSAPP",
-    text1: "+234 901-134-0095",
-    text2: "+234 901-134-0095",
+    text1: "+39 342-06-69-619",
+    text2: "",
   )
 ];
 
@@ -88,7 +88,7 @@ Widget _buildUi(double width, BuildContext context) {
                                       style: GoogleFonts.oswald(
                                         fontSize: 18.0,
                                         fontWeight: FontWeight.w700,
-                                        color: Colors.white,
+                                        color: kTitleColor,
                                       ),
                                     ),
                                   ],
